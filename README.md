@@ -1,6 +1,6 @@
 # cdvd
 ### CLI eyecandy ~ bouncing DvD logo in terminal written in C
-[![asciicast](https://asciinema.org/a/736340.svg)](https://asciinema.org/a/736340)
+![short-gif](https://i.imgur.com/D17BzFC.gif)
 
 # Quick Install
 > Build, install into /bin/cdvd and clean build artifacts
@@ -54,3 +54,9 @@ xxd -i -n dvd_logo logo.txt > logo.inc
 export LANG=en_US.UTF-8
 gcc -O2 -Wall -Wextra -std=c11 dvd_ascii.c -lncursesw -lm -o dvd
 ```
+
+---
+
+# More
+> ## Full Demo on ASCIINEMA
+[![asciicast](https://asciinema.org/a/736340.svg)](https://asciinema.org/a/736340)
