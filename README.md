@@ -243,3 +243,5 @@
 >
 >- Terminal size affects bounce boundaries (resizing is handled on the fly).
 >- For best visuals, use a font with good box‑drawing / block character coverage.
+>- Also, Important to note is, this project was mostly just ***Vibe Coded*** with much help from an A.I assistant,
+>- while I took it as a learning opportunity with a project that does not neceaseaarly have to be fully understood right away and memory safe! 
