@@ -22,8 +22,18 @@ CLI eyecandy ~ bouncing DvD logo in terminal written in C
 # Compiling
 > You can change logo to anything you preffer before compilation, to bake it into binary, or with a `-L` flag in runtime \
 > Make sure you have `logo.txt` with ASCII art before compiling \
-> Run `bash compile.sh` to make it easy, or manually with:
 
+## Buld
+> With Makefile:
+```c
+#   make                 # build
+#   make run             # run with nice defaults
+#   sudo make install    # install to /bin/cdvd  (override BINDIR/INSTALL_NAME)
+#   sudo make uninstall  # remove installed binary
+#   make clean           # clean artifacts
+```
+> Alternatively run `bash compile.sh` \
+> Or manually:
 > Convert logo.txt to inc before compilation
 ```c
 xxd -i -n dvd_logo logo.txt > logo.inc
