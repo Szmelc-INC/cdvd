@@ -1,7 +1,11 @@
 # cdvd
 CLI eyecandy ~ bouncing DvD logo in terminal written in C
 
-# Controls
+# Usage
+```bash
+cdvd [-f fps] [-s speed] [-t decay_sec] [-L logo.txt] [--info] [--mask-edges|--mask-blanks]
+```
+
 > Flags:
 ```c
    -f <fps>    : frames per second (default 60)
