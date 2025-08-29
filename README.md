@@ -2,17 +2,20 @@
 ### CLI eyecandy ~ bouncing DvD logo in terminal written in C
 ![short-gif](https://i.imgur.com/D17BzFC.gif)
 
+---
+
 # Quick Install
 > Build, install into /bin/cdvd and clean build artifacts
 ```sh
 make && sudo make install && make clean
 ```
 
+---
+
 # Usage
 ```bash
 cdvd [-f fps] [-s speed] [-t decay_sec] [-L logo.txt] [--info] [--mask-edges|--mask-blanks]
 ```
-
 > Flags:
 ```c
    -f <fps>    : frames per second (default 60)
@@ -30,10 +33,11 @@ cdvd [-f fps] [-s speed] [-t decay_sec] [-L logo.txt] [--info] [--mask-edges|--m
   Decay        : [y] / [u]
 ```
 
+---
+
 # Compiling
 > You can change logo to anything you preffer before compilation, to bake it into binary, or with a `-L` flag in runtime \
 > Make sure you have `logo.txt` with ASCII art before compiling \
-
 ## Buld
 > With Makefile:
 ```c
