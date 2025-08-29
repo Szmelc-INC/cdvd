@@ -2,6 +2,12 @@
 ### CLI eyecandy ~ bouncing DvD logo in terminal written in C
 [![asciicast](https://asciinema.org/a/736340.svg)](https://asciinema.org/a/736340)
 
+# Quick Install
+> Build, install into /bin/cdvd and clean build artifacts
+```sh
+make && sudo make install && make clean
+```
+
 # Usage
 ```bash
 cdvd [-f fps] [-s speed] [-t decay_sec] [-L logo.txt] [--info] [--mask-edges|--mask-blanks]
