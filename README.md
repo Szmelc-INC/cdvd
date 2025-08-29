@@ -18,22 +18,25 @@
 > ```bash
 > cdvd [-f fps] [-s speed] [-t decay_sec] [-L logo.txt] [--info] [--mask-edges|--mask-blanks]
 > ```
-> Flags:
->```c
->   -f <fps>    : frames per second (default 60)
->   -s <speed>  : cells/sec (default 18)
->   -t <sec>    : ghost trail decay time in seconds (0 = no trail)
->   -L <path>   : load logo from file (UTF-8) at runtime (optional)
->   --info      : show status HUD line
->```
-> Hotkeys:
->```c
->  Trail        : [t] - ON/OFF
->  Info         : [i] - ON/OFF
->  Speed        : [Arrow Left] / [Arrow Right]
->  Frames       : [Arrow Up] / [Arrow Down]
->  Decay        : [y] / [u]
->```
+>### Flags
+>| Flag | Description |
+>|------|-------------|
+>| `-f <fps>` | Frames per second |
+>| `-s <speed>` | Cells per second (movement speed) |
+>| `-t <sec>` | Ghost‑trail decay time (0 = off) |
+>| `-L <path>` | Load a UTF‑8 logo file at runtime |
+>| `--info` | Show status HUD line |
+>| `--mask-edges` / `--mask-blanks` | Edge/blank masking modes |
+>
+>### Hotkeys (at runtime)
+>| Action | Key(s) |
+>|---|---|
+>| Toggle trail | `t` |
+>| Toggle info HUD | `i` |
+>| Speed ± | `←` / `→` |
+>| FPS ± | `↑` / `↓` |
+>| Decay ± | `y` / `u` |
+
 
 ---
 
@@ -65,5 +68,29 @@
 ---
 
 > [!NOTE]
-> ### Full Demo on ASCIINEMA
-> [![asciicast](https://asciinema.org/a/736340.svg)](https://asciinema.org/a/736340)
+> # More
+> ## Custom logos
+>- Provide your own ASCII/UTF‑8 art via `-L path/to/logo.txt` at runtime.
+>- Or bake it in at compile time using the `xxd` step above.
+>- Make sure your terminal font supports the characters you use.
+>
+>---
+>
+>## 🎬 Demo (Asciinema)
+>
+>[![asciicast](https://asciinema.org/a/736340.svg)](https://asciinema.org/a/736340)
+>
+>---
+>
+>## Requirements
+>
+>- A POSIX‑y environment (Linux, BSD, macOS).
+>- `ncursesw`, `gcc`/`clang`, and `make` (if using the Makefile).
+>- UTF‑8 locale (e.g., `LANG=en_US.UTF-8`).
+>
+>---
+>
+>## 📝 Notes
+>
+>- Terminal size affects bounce boundaries (resizing is handled on the fly).
+>- For best visuals, use a font with good box‑drawing / block character coverage.
