@@ -1,4 +1,4 @@
-// dvd_ascii.c — Bouncing ASCII/Unicode logo with smooth ordered-dither GHOST trail
+// dvd_ascii.c — Bouncing ASCII/Unicode logo with optional decaying trail
 // Hotkeys:
 //   ←/→  : speed -/+ 1            (clamp 1..200)
 //   ↑/↓  : FPS   -/+ 1            (clamp 5..240)
