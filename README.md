@@ -1,5 +1,6 @@
 # cdvd
-CLI eyecandy ~ bouncing DvD logo in terminal written in C
+### CLI eyecandy ~ bouncing DvD logo in terminal written in C
+[![asciicast](https://asciinema.org/a/736340.svg)](https://asciinema.org/a/736340)
 
 # Usage
 ```bash
