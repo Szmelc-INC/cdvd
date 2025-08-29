@@ -19,7 +19,8 @@ CLI eyecandy ~ bouncing DvD logo in terminal written in C
   Decay        : [y] / [u]
 ```
 
-# Compile
+# Compiling
+> You can change logo to anything you preffer before compilation, to bake it into binary, or with a `-L` flag in runtime \
 > Make sure you have `logo.txt` with ASCII art before compiling \
 > Run `bash compile.sh` to make it easy, or manually with:
 
