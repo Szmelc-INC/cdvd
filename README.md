@@ -1,12 +1,35 @@
-# cdvd
-### CLI eyecandy ~ bouncing DvD logo in terminal written in C
-![short-gif](https://i.imgur.com/D17BzFC.gif)
+<div align="center">
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/serainox420/serainox420/personal/vector/logo-white.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/serainox420/serainox420/personal/vector/logo-black.png">
+    <img src="https://i.imgur.com/qpgeyna.png" alt="cDvD" width="124" />
+  </picture>
+
+  # <h1><samp><b>𝙘𝘿𝙫𝘿</b></samp></h1>
+
+  <h4><blockquote>
+ <p><table><tr><td>𝙾𝚕𝚍-𝚜𝚌𝚑𝚘𝚘𝚕 𝚜𝚌𝚛𝚎𝚎𝚗𝚜𝚊𝚟𝚎𝚛 𝚒𝚗 𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚕</td></tr></table></p>
+    <p><i><samp><h4>𝙰 𝚝𝚒𝚗𝚢 𝙲 / 𝚗𝚌𝚞𝚛𝚜𝚎𝚜 𝚎𝚢𝚎𝚌𝚊𝚗𝚍𝚢 𝚝𝚑𝚊𝚝 𝚍𝚛𝚊𝚠𝚜 𝚊 𝚋𝚘𝚞𝚗𝚌𝚒𝚗𝚐 𝙳𝚟𝙳 𝚕𝚘𝚐𝚘 𝚠𝚒𝚝𝚑 𝚊 𝚏𝚎𝚠 𝚎𝚡𝚝𝚛𝚊 𝚏𝚎𝚊𝚝𝚞𝚛𝚎𝚜.</samp></i></p></h4>
+  
+  <p>
+    <a href="https://github.com/Szmelc-INC/cdvd">
+    </a>
+    <img alt="C lang"         src="https://img.shields.io/badge/Lang-00599C?style=for-the-badge&logo=c&logoColor=white" height="34">
+    <img alt="ncursesw"  src="https://img.shields.io/badge/ncursesw-✓-0A7B83?style=for-the-badge" height="34">
+    <img alt="Terminal"  src="https://img.shields.io/badge/CLI-EYECANDY-226?style=for-the-badge" height="34">
+    <a href="https://github.com/Szmelc-INC/cdvd/blob/main/LICENSE">
+      <img alt="License" src="https://img.shields.io/github/license/Szmelc-INC/cdvd?style=for-the-badge" height="34">
+    </a>
+  </p>
+</div>
+ </blockquote></h4>
 
 ---
 
 > [!IMPORTANT]
 > # Quick Install 
-> Build, install into /bin/cdvd and clean build artifacts \
+> Build, install into `/bin/cdvd` and clean build artifacts \
 > ```sh
 > make && sudo make install && make clean
 > ```
