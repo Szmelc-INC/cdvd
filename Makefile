@@ -29,6 +29,8 @@ TARGET        := dvd
 INSTALL_NAME  ?= cdvd
 SRC           := dvd_ascii.c
 LOGO_TXT      ?= logo.txt
+# logo.inc is generated from logo.txt and checked in so building does not
+# require xxd/vim. Regenerate it with `make update-logo` if logo.txt changes.
 LOGO_INC      := logo.inc
 
 # Install paths
@@ -37,12 +39,14 @@ DESTDIR ?=
 INSTALL ?= install
 STRIP   ?= strip
 
-.PHONY: all clean run install uninstall
+.PHONY: all clean run install uninstall update-logo
 
 all: $(TARGET)
 
-$(LOGO_INC): $(LOGO_TXT)
-	xxd -i -n dvd_logo $< > $@
+# Maintainer convenience: regenerate logo.inc after editing logo.txt.
+# Uses portable `xxd -i` + sed instead of GNU-only `xxd -n`.
+update-logo:
+	xxd -i $(LOGO_TXT) | sed 's/logo_txt/dvd_logo/g' > $(LOGO_INC)
 
 $(TARGET): $(SRC) $(LOGO_INC)
 	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ $(SRC) $(LDLIBS)
@@ -63,4 +67,4 @@ uninstall:
 	@echo "Removed $(DESTDIR)$(BINDIR)/$(INSTALL_NAME)"
 
 clean:
-	$(RM) $(TARGET) $(LOGO_INC)
+	$(RM) $(TARGET)
