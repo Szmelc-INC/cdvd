@@ -25,7 +25,7 @@
           meta = {
             description = "Eyecandy screensaver: DVD logo bounce in the terminal";
             homepage = "https://github.com/Szmelc-INC/cdvd";
-            license = pkgs.lib.licenses.mit;
+            license = pkgs.lib.licenses.gpl3Only;
             mainProgram = "cdvd";
             platforms = pkgs.lib.platforms.linux;
           };
